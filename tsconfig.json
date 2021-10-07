@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "app",
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "./frontend"
+  ]
+}
