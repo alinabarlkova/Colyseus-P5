@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi Tetris</title>
+    <!-- <script type="text/javascript" src="https://unpkg.com/colyseus.js@^0.14.0/dist/colyseus.js"></script> -->
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<!-- <div id="connect-modal" class="nes-container is-rounded is-dark with-title" style="display: none;"> -->
+<div id="connect-modal" class="nes-container is-rounded is-dark with-title">
+    <p class="title">Create or Join</p>
+    <p><span>Name : </span><input id="name", type="text" size="10" name="name" style="background-color: #3b3c3e; border: none;"/></p>
+    <p><label>
+        <input id="create" type="radio" class="nes-radio is-dark" name="create-join" />
+        <span>Create</span>
+    </label><label>
+        <input id="join" type="radio" class="nes-radio is-dark" name="create-join" />
+        <span>Join</span>
+    </label></p>
+    <div id="rooms"></div>
+</div>
+<div id="team-modal" class="nes-container is-rounded is-dark with-title" style="display: none;">
+    <p class="title">Select Team!</p>
+    <label>
+        <input id="team1" type="radio" class="nes-radio is-dark" name="answer-team" />
+        <span>Team 1</span>
+    </label>
+    
+    <label>
+        <input id="team2" type="radio" class="nes-radio is-dark" name="answer-team" />
+        <span>Team 2</span>
+    </label>
+</div>
+<div id="ready-modal" class="nes-container is-rounded is-dark with-title" style="display: none;">
+        <p class="title">Ready to play?</p>
+        <label>
+            <input id="ready" type="radio" class="nes-radio is-dark" name="answer-dark" />
+            <span>Yes</span>
+        </label>
+    
+        <label>
+            <input id="not-ready" type="radio" class="nes-radio is-dark" name="answer-dark" />
+            <span>No</span>
+        </label>
+</div>
+
+<div id="button-modal">
+    <!-- style="display: none;" -->
+    <div id="button-right" class="btn nes-button">R</div>
+    <div id="button-up" class="btn">U</div>
+    <div id="button-left" class="btn">L</div>
+    <div id="button-down" class="btn">D</div>
+</div>
+<div id="result-modal"  class="nes-container is-rounded is-dark with-title" style="display: none;">
+    
+</div>
+</body>
+<script src="index.ts" type="application/javascript"></script>
+</html>
