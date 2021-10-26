@@ -1,6 +1,10 @@
 # Tetrolyseus
 
-A co-op multiplayer T***** implementation using Colyseus
+A co-op multiplayer Tetris game implementation using Colyseus
+
+# install 
+yarn install
+yarn start
 
 ## How to play
 
